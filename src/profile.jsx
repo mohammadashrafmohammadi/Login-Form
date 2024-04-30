@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom"
 const user = {
   name: "Ashraf Mohammadi",
-  imageUrl: "../../public/ashraf.jpg",
+  imageUrl: "../public/ashraf.jpg",
   imageSize: 90,
 };
 export function Profile() {
