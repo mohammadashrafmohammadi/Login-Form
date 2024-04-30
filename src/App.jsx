@@ -1,9 +1,10 @@
-import { Profile } from "./profile";
-import Home from "./home";
+import { Profile } from "./components/profile";
+import Home from "./components/home";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",
