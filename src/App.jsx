@@ -1,12 +1,22 @@
-import './styles/App.css';
-import LoginForm from './components/form/LoginForm';
+import { Profile } from "./profile";
+import Home from "./home";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+  {
+    path: "/profile",
+    element: <Profile/>
+  },
+]);
 
 function App() {
-  return (
-    <div className="App">
-      <LoginForm />
-    </div>
-  );
+  return  <RouterProvider router={router} />
 }
 
-export default App;
+export default App
