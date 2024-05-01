@@ -1,15 +1,15 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-
-function Home() {
+export function Home() {
   return (
     <>
-    <Link to="/profile">Profile</Link>
-    <h1>Home</h1>
-    <h4>Welcome to this page</h4>
     
+      <Link to="/profile">Profile</Link>
+      <h1>Home</h1>
+      <h4>Welcome to this page</h4>
+
     </>
-  )
+  );
 }
 
-export default Home
+

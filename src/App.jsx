@@ -1,23 +1,23 @@
 import { Profile } from "./components/profile";
-import Home from "./components/home";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { Home } from "./components/home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home />,
   },
   {
     path: "/profile",
-    element: <Profile/>
+    element: <Profile />,
   },
 ]);
 
-function App() {
-  return  <RouterProvider router={router} />
+export function App() {
+  return (
+    <>
+      <RouterProvider router={router} />
+      {/* After Pushed */}
+    </>
+  );
 }
-
-export default App
